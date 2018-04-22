@@ -11,5 +11,9 @@ public class App {
         calculator.div(a,b);
         calculator.multip(a,b);
         calculator.display();
+        calculator.testFinalPrint();
+
+        System.out.println(calculator.superValue);
+        System.out.println(calculator.getValue());
     }
 }

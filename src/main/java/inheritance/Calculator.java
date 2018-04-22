@@ -3,7 +3,8 @@ package inheritance;
 public class Calculator {
     int z;
     int num = 99;
-    int value;
+    private int value;
+    int superValue = 999;
 
     public void summ(int x, int y) {
         z = x + y;
@@ -17,6 +18,10 @@ public class Calculator {
 
     public void print() {
         System.out.println("Super class print method");
+    }
+
+    final void testFinalPrint() {
+        System.out.println("Subclass can call the final method but cannot override it");
     }
 
     public Calculator() {}

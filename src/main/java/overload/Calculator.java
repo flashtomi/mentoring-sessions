@@ -12,7 +12,7 @@ public class Calculator {
         System.out.println("a + b + c = " + (a + b + c));
     }
 
-    public  void add(float a, float b){
+    public void add(float a, float b){
         System.out.println("a + b = " + (a + b));
     }
 }
