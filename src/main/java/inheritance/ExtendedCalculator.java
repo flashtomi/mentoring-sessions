@@ -19,8 +19,17 @@ public class ExtendedCalculator extends Calculator {
         System.out.println("Sub class print method");
     }
 
+    public static void testStatic() {
+        System.out.println("Subclass hide the same method of the superclass");
+    }
+
     public ExtendedCalculator(int value) {
         super(value); //call the superclass constructor
+    }
+
+    @Override
+    protected void testProtected() {
+        System.out.println("Protected class inherited by the subclass. And sub can override it.");
     }
 
     public void display() {

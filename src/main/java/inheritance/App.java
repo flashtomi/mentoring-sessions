@@ -12,6 +12,8 @@ public class App {
         calculator.multip(a,b);
         calculator.display();
         calculator.testFinalPrint();
+        ExtendedCalculator.testStatic();
+        calculator.testProtected();
 
         System.out.println(calculator.superValue);
         System.out.println(calculator.getValue());

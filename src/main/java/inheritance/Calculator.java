@@ -24,6 +24,18 @@ public class Calculator {
         System.out.println("Subclass can call the final method but cannot override it");
     }
 
+    public static void testStatic() {
+        System.out.println("Static method of the superclass. Subclass inherit the static method of the superclass");
+    }
+
+    protected void testProtected() {
+        System.out.println("Protected class inherited by the subclass.");
+    }
+
+    private void testPrivate() {
+        System.out.println("");
+    }
+
     public Calculator() {}
 
     public Calculator(int value) {
