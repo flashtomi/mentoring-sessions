@@ -17,5 +17,6 @@ public class App {
 
         System.out.println(calculator.superValue);
         System.out.println(calculator.getValue());
+        System.out.println(calculator.protectedValue);
     }
 }

@@ -1,10 +1,20 @@
 package inheritance;
 
+//The inherited fields can be used directly, just like any other fields.
+//You can declare a field in the subclass with the same name as the one in the superclass, thus hiding it (not recommended).
+//You can declare new fields in the subclass that are not in the superclass.
+//The inherited methods can be used directly as they are.
+//You can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it.
+//You can write a new static method in the subclass that has the same signature as the one in the superclass, thus hiding it.
+//You can declare new methods in the subclass that are not in the superclass.
+//You can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super.
+
 public class Calculator {
     int z;
     int num = 99;
     private int value;
     int superValue = 999;
+    protected String protectedValue = "protected string";
 
     public void summ(int x, int y) {
         z = x + y;
@@ -29,7 +39,7 @@ public class Calculator {
     }
 
     protected void testProtected() {
-        System.out.println("Protected class inherited by the subclass.");
+        System.out.println("Protected method inherited by the subclass.");
     }
 
     private void testPrivate() {

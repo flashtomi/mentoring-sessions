@@ -4,6 +4,8 @@ import inheritance.Calculator;
 
 public class OverriddenCalculator extends Calculator {
 
+    // a method in a subclass can return an object whose type is a subclass of the type returned by the method with the same signature in the superclass.
+
     @Override
     public void print() {
         System.out.println("Overridden method of the super class print method");
